@@ -16,7 +16,7 @@ bool stockThread::getStockDateAll()
     qDebug("stockThread is run!");
     //读取股票代码
     stockCode stock_code;
-    QVector<stockStruct> stock_return_struct = stock_code.stockReturnCode("d:\\stock_1.xlsx");
+    QVector<stockStruct> stock_return_struct = stock_code.stockReturnCode("d:\\stock\\stockNum.xls");
     stock_struct_qvector = stock_return_struct;
     //返回股票数据
     stockDate stock_date;
