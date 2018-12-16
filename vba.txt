@@ -1,0 +1,13 @@
+Sub stock()
+Dim a As Variant
+Dim b As Variant
+Dim c As Variant
+For i = 1 To 3676
+a = Cells(i, 1).Value
+b = Split(a, ".")
+c = LCase(b(1)) + b(0)
+Cells(i, 1).Value = c
+
+Next
+
+End Sub
